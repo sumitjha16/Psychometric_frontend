@@ -38,9 +38,9 @@ const AdminPanel: React.FC<AdminPanelProps> = ({
     const fetchData = async () => {
       try {
         const [feedbackRes, assessmentsRes, usersRes] = await Promise.all([
-          axios.get('https://psychometricbackend-production.up.railway.app/api/admin/feedbacks'),
-          axios.get('https://psychometricbackend-production.up.railway.app/api/admin/assessments'),
-          axios.get('https://psychometricbackend-production.up.railway.app/api/admin/users')
+          axios.get('https://psychometric-backend.onrender.com/api/admin/feedbacks'),
+          axios.get('https://psychometric-backend.onrender.com/api/admin/assessments'),
+          axios.get('https://psychometric-backend.onrender.com/api/admin/users')
         ]);
 
         // Ensure data is always an array
