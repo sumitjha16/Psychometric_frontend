@@ -9,7 +9,7 @@ interface LandingPageProps {
 const LandingPage: React.FC<LandingPageProps> = ({ onLogin }) => {
   const [showModal, setShowModal] = useState(false);
   const [name, setName] = useState('');
-  const [userType, setUserType] = useState<'Student' | 'Faculty' | 'Visitor' | 'Other'>('Student');
+  const [userType, setUserType] = useState<'Student' | 'Faculty' | 'Visitor' | 'Other'>('Visitor');
   const [rollNumber, setRollNumber] = useState('');
   const [error, setError] = useState('');
 
