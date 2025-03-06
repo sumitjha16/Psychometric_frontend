@@ -125,7 +125,7 @@ const QuestionRound: React.FC<QuestionRoundProps> = ({
       const { name = 'Anonymous', userType = 'Unknown', rollNumber = 'N/A' } = user || {};
 
       try {
-        const response = await axios.post('https://psychometricbackend-production.up.railway.app/submit-assessment', {
+        const response = await axios.post('https://psychometric-backend.onrender.com/submit-assessment', {
           user: {
             name,
             userType,
