@@ -61,7 +61,7 @@ const FeedbackPage: React.FC = () => {
 
     try {
       // Send feedback to backend
-      const response = await axios.post('https://psychometricbackend-production.up.railway.app/submit-feedback', feedbackData, {
+      const response = await axios.post('https://psychometric-backend.onrender.com/submit-feedback', feedbackData, {
         headers: {
           'Content-Type': 'application/json'
         }
