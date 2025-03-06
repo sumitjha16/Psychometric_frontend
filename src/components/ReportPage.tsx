@@ -50,7 +50,7 @@ const ReportPage: React.FC<ReportPageProps> = ({
   useEffect(() => {
     const fetchPersonalityResult = async () => {
       try {
-        const response = await axios.get(`https://psychometricbackend-production.up.railway.app/get-assessment/${user.name}`);
+        const response = await axios.get(`https://psychometric-backend.onrender.com/get-assessment/${user.name}`);
 
         if (response.data && response.data.personality_result) {
           setPersonalityResult(response.data.personality_result);
